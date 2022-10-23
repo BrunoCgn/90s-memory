@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- weird error fic -->
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+    <div class="container">
+        <div class="select">
+            <select name="levelList" id="levelList">
+                <option>-- Choose Level --</option>
+                <option>Easy</option>
+                <option>Medium</option>
+                <option>Hard</option>
+            </select>
+            <button class="play btn" id="play">Go!</button>
+            <button class = "btn"id="reset">Reset</button>
+        </div>
+        <div id="grid"></div>
+        <div id="overlay"></div>
+        <div class="stats">
+            <h3>Score: <span id="result"></span></h3>
+            <h3>Tries: <span id="tries"></span></h3>
+        </div>
+        <div class="modal-match" id="modal-match">
+            <div class="modal-body">Great memory!</div>
+            <button class="btn" data-close-btn id="close-btn">&times;</button>
+        </div>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
